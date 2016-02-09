@@ -1,0 +1,63 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact List With Angular</title>
+    <!-- styles --> 
+      <!-- bootstrap CDN -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+      <!-- autor styles -->
+      <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- styles -->
+  </head>
+
+  <body>
+    <div class="container"> 
+      <ng-view>
+        <header-directive></header-directive>
+        <contact-list-directive></contact-list-directive>
+        <contact-information-directive></contact-information-directive>
+        <footer-directive></footer-directive>
+      </ng-view>
+    </div>
+      <!-- scripts -->
+        <!-- jquery CDN -->
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <!-- bootstrapJS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- angular CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+        <!-- ui router -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+        <!-- ui bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap.min.js"></script>
+        
+        <!-- angular scripts -->
+        <script src="app/app.module.js"></script>
+        <script src="app/app.routes.js"></script>
+        <script src="app/app.contact.factory.js"></script>
+        <!-- angular directives -->
+        <script src="app/components/header/header.directive.js"></script>
+        <script src="app/components/nav/nav.directive.js"></script>
+        <script src="app/components/contact.list/contact.list.directive.js"></script>
+        <script src="app/components/contact.information/contact.information.directive.js"></script>
+        <script src="app/components/footer/footer.directive.js"></script>
+        <!-- angular controllers -->
+        <script src="app/app.controller.js"></script>
+        <script src="app/components/header/header.controller.js"></script>
+        <script src="app/components/nav/nav.controller.js"></script>
+        <script src="app/components/contact.list/contact.list.controller.js"></script>
+        <script src="app/components/contact.information/contact.information.controller.js"></script>
+        <script src="app/components/footer/footer.controller.js"></script>
+        <!-- autor scripts-->
+        <script src="assets/js/main.js"></script>
+      <!-- scripts -->
+  </body>
+</html>

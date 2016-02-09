@@ -1,0 +1,16 @@
+<div class="row">
+	<div class="col-md-6 col-md-offset-3 user-container" ng-controller="contactListController as self">
+		<img class="contact-img" src="assets/img/default-user.png" alt="contact image">
+		<div class="user-data-container">
+			<p class="contact-content" contact="contact">Name: {{self.contact.name}}</p>
+			<p class="contact-content" phone="phone">Phone: {{self.contact.phone}}</p>
+			<a href="mailto:" class="contact-content" email="email">email: {{self.contact.email}}</a>
+			<p class="contact-content" phone="address">Address: {{self.contact.address}}</p>
+			<p class="contact-content" phone="nick">Nickname: {{self.contact.nick}}</p>
+
+			<button type="button" class="contact-btn text-danger" delete="delete"><i class="fa fa-trash"></i></button>
+			<button type="button" class="contact-btn text-info" edit="edit"><i class="fa fa-pencil"></i></button>
+		</div>
+		<hr>
+	</div>
+</div>
